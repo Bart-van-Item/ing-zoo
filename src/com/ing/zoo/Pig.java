@@ -2,46 +2,27 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Pig {
-    public String name;
-    public String helloText;
-    public String eatText;
-    public String trick;
-
-    public Pig()
-    {
+public class Pig extends Animal {
+    public Pig(String name) {
+        super(name);
     }
 
-    public void sayHello()
-    {
-        helloText = "splash";
-        System.out.println(helloText);
+    @Override
+    protected String getHelloText() {
+        return "splash";
     }
 
-    public void eatLeaves()
-    {
-        eatText = "munch munch oink";
-        System.out.println(eatText);
+    public void eatLeaves() {
+        System.out.println(getName() + ": munch munch oink");
     }
 
-    public void eatMeat()
-    {
-        eatText = "nomnomnom oink thx";
-        System.out.println(eatText);
+    public void eatMeat() {
+        System.out.println(getName() + ": nomnomnom oink thx");
     }
 
-    public void performTrick()
-    {
+    public void performTrick() {
         Random random = new Random();
-        int rnd = random.nextInt(2);
-        if(rnd == 0)
-        {
-            trick = "rolls in the mud";
-        }
-        else
-        {
-            trick = "runs in circles";
-        }
-        System.out.println(trick);
+        String trick = random.nextInt(2) == 0 ? "rolls in the mud" : "runs in circles";
+        System.out.println(getName() + ": " + trick);
     }
 }
