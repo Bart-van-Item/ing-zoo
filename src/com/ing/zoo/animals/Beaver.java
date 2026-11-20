@@ -1,4 +1,7 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
+
+import com.ing.zoo.traits.Herbivore;
+import com.ing.zoo.traits.TrickPerformer;
 
 import java.util.Random;
 

@@ -1,5 +1,10 @@
 package com.ing.zoo;
 
+import com.ing.zoo.traits.Carnivore;
+import com.ing.zoo.traits.Herbivore;
+import com.ing.zoo.traits.TrickPerformer;
+import com.ing.zoo.animals.*;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;

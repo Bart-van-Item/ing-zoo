@@ -1,4 +1,4 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
 
 public abstract class Animal {
     private final String name;    // Private final name so it cant be changed from the outside
