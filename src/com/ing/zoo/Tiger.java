@@ -2,7 +2,7 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Tiger extends Animal {
+public class Tiger extends Animal implements Carnivore, TrickPerformer {
     public Tiger(String name) {
         super(name);
     }

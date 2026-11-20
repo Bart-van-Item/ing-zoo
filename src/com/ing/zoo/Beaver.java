@@ -2,7 +2,7 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Beaver extends Animal {
+public class Beaver extends Animal implements Herbivore, TrickPerformer {
     public Beaver(String name) {
         super(name);
     }

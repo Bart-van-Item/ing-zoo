@@ -1,6 +1,6 @@
 package com.ing.zoo;
 
-public class Shark extends Animal {
+public class Shark extends Animal implements Carnivore {
     public Shark(String name) {
         super(name);
     }
