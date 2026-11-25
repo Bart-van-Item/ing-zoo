@@ -23,7 +23,7 @@ public class Zoo {
         );
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Typ 'exit' om te stoppen.");
+        System.out.println("Typ 'help' voor alle commands of 'exit' om te stoppen.");
 
         while (true) {
             System.out.print("Voer uw command in: ");
@@ -68,8 +68,10 @@ public class Zoo {
                         ((TrickPerformer) animal).performTrick();
                     }
                 }
+            } else if (input.equals("help")) {
+                System.out.println("Commands: hello, hello <naam>, give leaves, give meat, perform trick, help, exit");
             } else {
-                System.out.println("Unknown command: " + input);
+                System.out.println("Unknown command: " + input + " (typ 'help' voor alle commands)");
             }
         }
     }
