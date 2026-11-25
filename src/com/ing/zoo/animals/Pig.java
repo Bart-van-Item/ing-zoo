@@ -13,7 +13,7 @@ public class Pig extends Animal implements Herbivore, Carnivore, TrickPerformer 
 
     @Override
     protected String getHelloText() {
-        return "splash";
+        return "Oink Oink";
     }
 
     public void eatLeaves() {
