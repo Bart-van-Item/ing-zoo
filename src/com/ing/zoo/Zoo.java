@@ -42,7 +42,9 @@ public class Zoo {
                 String name = input.substring("hello ".length()).trim();
                 boolean found = false;
                 for (Animal animal : animals) {
-                    if (animal.getName().equalsIgnoreCase(name)) {
+                    // Match on the animal's name (bruce) or its type (shark)
+                    if (animal.getName().equalsIgnoreCase(name)
+                            || animal.getClass().getSimpleName().equalsIgnoreCase(name)) {
                         animal.sayHello();
                         found = true;
                     }
